@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+div {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: lightgrey;
+    border: 1px solid black; 
+}
+
+#a1 {
+    background-color: #8B0000;
+}
+
+#a2 {
+    background-color: #556B2F;
+}
+
+#a3, #a5 {
+    background-color: #00008B;
+}

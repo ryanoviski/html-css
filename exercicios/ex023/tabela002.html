@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        table {
+            width: 550px;
+            border-collapse: collapse;
+            text-align: center;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.normal {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>USO DE TABELAS GRANDES</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+            TABLE
+                CAPTION
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col" style="width: 200px;">País comparável</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="normal">44.411.238</td>
+                <td class="normal">Espanha (46.754.778)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="normal">20.538.718</td>
+                <td class="normal">Burquina F. (20.903.273)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="normal">16.054.524</td>
+                <td class="normal">Camboja (16.718.965)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="normal">14.141.626</td>
+                <td class="normal">Zimbabwe (14.862.924)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td class="normal">11.444.380</td>
+                <td class="normal">Tunísia (11.818.619)</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Pernambuco</td>
+                <td class="normal">9.058.931</td>
+                <td class="normal">Áustria (9.006.398)</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pará</td>
+                <td class="normal">8.121.025</td>
+                <td class="normal">Suíça (8.654.622)</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Goiás</td>
+                <td class="normal">7.056.495</td>
+                <td class="normal">Bulgária (6.948.445)</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Maranhão</td>
+                <td class="normal">6.775.805</td>
+                <td class="normal">Bulgária (6.948.445)</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Paraíba</td>
+                <td class="normal">3.974.687</td>
+                <td class="normal">Geórgia (3.989.167)</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Amazonas</td>
+                <td class="normal">3.941.613</td>
+                <td class="normal">Geórgia (3.989.167)</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Espírito Santo</td>
+                <td class="normal">3.833.712</td>
+                <td class="normal">Geórgia (3.989.167)</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Mato Grosso</td>
+                <td class="normal">3.658.649</td>
+                <td class="normal">Geórgia (3.989.167)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row" colspan="2">Total de Habitantes</th>
+            <td><strong>153.011.403</strong></td>
+            <td class="normal"><strong>Países (158.573.137)</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
